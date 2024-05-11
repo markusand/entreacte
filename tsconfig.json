@@ -8,6 +8,7 @@
     "declaration": true,
     "sourceMap": true
   },
-  "include": ["src", "test"],
-  "exclude": ["dist"]
+
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "dist", "tests"]
 }
