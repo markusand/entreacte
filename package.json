@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.0.1",
   "name": "entreacte",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "test": "jest --env=jsdom --watchAll",
-    "build": "jest && tsc && cp -R ./src/animations ./dist/animate",
+    "build": "jest && tsc && cp -R ./src/animations ./dist/animations",
     "prepare": "npm run build"
   },
   "keywords": [

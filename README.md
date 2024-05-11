@@ -28,7 +28,7 @@ app.use(entreacte, { router });
 Import default animations or create your own. Animations are a pair of `*-enter` and `*-leave` steps.
 
 ```js
-import 'entreacte/dist/animate/fade.css;
+import 'entreacte/dist/animate/reveal.css;
 ```
 
 ```css
