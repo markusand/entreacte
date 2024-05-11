@@ -18,7 +18,7 @@ export default (router: Router, options: DirectiveOptions) => {
     el.style.setProperty('animation', property);
   };
 
-  const elements = () => [...document.querySelectorAll<HTMLElement>(`[data-${namespace}]`)];
+  const elements = () => Array.from(document.querySelectorAll<HTMLElement>(`[data-${namespace}]`));
 
   router.afterEach(async () => {
     await nextTick();
