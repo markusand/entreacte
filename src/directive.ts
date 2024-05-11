@@ -1,8 +1,8 @@
-import { type Directive } from 'vue';
+import { type ObjectDirective } from 'vue';
 import { NAMESPACE, TRANSITIONS, ATTRIBUTES } from './defaults';
 import type { DirectiveOptions as Options, DirectiveAttributes, Attributes } from './types';
 
-export default (options: Options): Directive<HTMLElement, DirectiveAttributes> => {
+export default (options: Options): ObjectDirective<HTMLElement, DirectiveAttributes> => {
   const { namespace = NAMESPACE, attributes: global } = options;
   return {
     created: (el, { arg, value }) => {
