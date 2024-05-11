@@ -1,0 +1,109 @@
+:root {
+	--fade-offset: 25%;
+}
+
+@keyframes fade-enter {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
+@keyframes fade-leave {
+	from { opacity: 1; }
+	to { opacity: 0; }
+}
+
+@keyframes fade-down-enter {
+	from {
+		opacity: 0;
+		transform: translateY(calc(-1 * var(--fade-offset)));
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes fade-down-leave {
+	from {
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+	to {
+		opacity: 0;
+		transform: translateY(var(--fade-offset));
+	}
+}
+
+@keyframes fade-left-enter {
+	from {
+		opacity: 0;
+		transform: translateX(var(--fade-offset));
+	}
+
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes fade-left-leave {
+	from {
+		opacity: 1;
+		transform: translateX(0);
+	}
+
+	to {
+		opacity: 0;
+		transform: translateX(calc(-1 * var(--fade-offset)));
+	}
+}
+
+@keyframes fade-right-enter {
+	from {
+		opacity: 0;
+		transform: translateX(calc(-1 * var(--fade-offset)));
+	}
+
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes fade-right-leave {
+	from {
+		opacity: 1;
+		transform: translateX(0);
+	}
+
+	to {
+		opacity: 0;
+		transform: translateX(var(--fade-offset));
+	}
+}
+
+@keyframes fade-up-enter {
+	from {
+		opacity: 0;
+		transform: translateY(var(--fade-offset));
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes fade-up-leave {
+	from {
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+	to {
+		opacity: 0;
+		transform: translateY(calc(-1 * var(--fade-offset)));
+	}
+}

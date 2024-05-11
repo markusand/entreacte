@@ -1,0 +1,49 @@
+:root {
+	--zoom-offset: 0.5;
+}
+
+@keyframes zoom-in-enter {
+	from {
+		opacity: 0;
+		transform: scale(calc(1 - var(--zoom-offset)));
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes zoom-in-leave {
+	from {
+		opacity: 1;
+		transform: none;
+	}
+
+	to {
+		opacity: 0;
+		transform: scale(calc(1 + var(--zoom-offset)));
+	}
+}
+
+@keyframes zoom-out-enter {
+	from {
+		opacity: 0;
+		transform: scale(calc(1 + var(--zoom-offset)));
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes zoom-out-leave {
+	from {
+		opacity: 1;
+		transform: none;
+	}
+
+	to {
+		opacity: 0;
+		transform: scale(calc(1 - var(--zoom-offset)));
+	}
+}

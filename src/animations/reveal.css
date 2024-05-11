@@ -1,0 +1,39 @@
+@keyframes reveal-down-enter {
+	from { clip-path: inset(0 0 100% 0); }
+	to { clip-path: inset(0); }
+}
+
+@keyframes reveal-down-leave {
+	from { clip-path: inset(0); }
+	to { clip-path: inset(100% 0 0 0); }
+}
+
+@keyframes reveal-left-enter {
+	from { clip-path: inset(0 0 0 100%); }
+	to { clip-path: inset(0); }
+}
+
+@keyframes reveal-left-leave {
+	from { clip-path: inset(0); }
+	to { clip-path: inset(0 100% 0 0); }
+}
+
+@keyframes reveal-right-enter {
+	from { clip-path: inset(0 100% 0 0); }
+	to { clip-path: inset(0); }
+}
+
+@keyframes reveal-right-leave {
+	from { clip-path: inset(0); }
+	to { clip-path: inset(0 0 0 100%); }
+}
+
+@keyframes reveal-up-enter {
+	from { clip-path: inset(100% 0 0 0); }
+	to { clip-path: inset(0); }
+}
+
+@keyframes reveal-up-leave {
+	from { clip-path: inset(0); }
+	to { clip-path: inset(0 0 100% 0); }
+}

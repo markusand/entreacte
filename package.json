@@ -1,0 +1,38 @@
+{
+  "version": "1.0.0",
+  "name": "entreacte",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "description": "Create fancy enter/leave animations in page elements, when switching between vue-router views.",
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc --build && cp -R ./src/animations ./dist/animate",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "vue",
+    "transition",
+    "animation",
+    "router",
+    "vue-router",
+    "entreacte"
+  ],
+  "author": "Marc Vilella <mvilella@obsa.ad> (https://github.com/markusand)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/markusand/entreacte.git"
+  },
+  "bugs": {
+    "url": "https://github.com/markusand/entreacte/issues"
+  },
+  "homepage": "https://github.com/markusand/entreacte",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint-config-markusand": "^1.0.5",
+    "typescript": "^5.4.5"
+  },
+  "peerDependencies": {
+    "vue": "^3.0.0",
+    "vue-router": "^4.0.0"
+  }
+}
