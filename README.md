@@ -25,7 +25,7 @@ import entreacte from 'entreacte';
 app.use(entreacte, { router });
 ```
 
-Import default animations or create your own. Animations are a pair of `*-enter` and `*-leave` steps.
+Import default animations or create your own. Fade animation is imported by default. Animations are a pair of `*-enter` and `*-leave` steps.
 
 ```js
 import 'entreacte/dist/animate/reveal.css;
@@ -92,7 +92,6 @@ Other parameters such as duration and delay, both for enter and leave steps, can
        delay: '0s',
      },
      leave: {
-       animation: '',
        duration: '2s',
        delay: '0s',
      },
